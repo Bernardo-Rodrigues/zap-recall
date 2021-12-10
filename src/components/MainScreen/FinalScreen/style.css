@@ -1,0 +1,18 @@
+.fail-screen h2,
+.sucess-screen h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+.fail-screen main img,
+.sucess-screen main img{
+    margin-left: 15px;
+}
+.fail-screen p,
+.sucess-screen p{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    margin-top: 15px;
+}

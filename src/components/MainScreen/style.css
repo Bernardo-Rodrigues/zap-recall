@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 160px;
+}
+.sucess-screen main,
+.fail-screen main{
+    flex-direction: column;
+
+    margin-top: 410px;
+}
+.flashcards-screen > img,
+.sucess-screen > img,
+.fail-screen > img{
+    padding: 26px 0 0 32px;
+}
