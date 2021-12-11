@@ -1,24 +1,36 @@
-export let FlashcardsArray = [
+export let Deck = [
     {
-        title: "Oque é JSX 1?",
-        number: 1,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras tortor at auctor diam.",
+        title: "Oque é JSX?",
+        answer: "Uma extensão de linguagem do JavaScript"
     },
     {
-        title: "Oque é JSX 2?",
-        number: 2,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam.",
+        title: "O React é __",
+        answer: "uma biblioteca JavaScript para construção de interfaces"
     },
     {
-        title: "Oque é JSX 3?",
-        number: 3,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu.",
+        title: "Componentes devem iniciar com __?",
+        answer: "letra maiúscula"
     },
     {
-        title: "Oque é JSX 4?",
-        number: 4,
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        title: "Podemos colocar __ dentro do JSX",
+        answer: "expressões"
+    },
+    {
+        title: "O ReactDOM nos ajuda __",
+        answer: "interagindo com a DOM para colocar componentes React na mesma"
+    },
+    {
+        title: "Usamos o npm para __",
+        answer: "gerenciar os pacotes necessários e suas dependências"
+    },
+    {
+        title: "Usamos props para __",
+        answer: "passar diferentes informações para componentes"
+    },
+    {
+        title: "Usamos estado (state) para __",
+        answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
     }
 ]
 
-export { FlashcardsArray as default };
+export { Deck as default };

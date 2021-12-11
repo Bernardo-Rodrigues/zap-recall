@@ -1,6 +1,7 @@
+import "./style.css"
+
 import zapRecall from "../../assets/img/logo.png"
 import next from "../../assets/img/next.png"
-import "./style.css"
 
 export default function FlashCards({setTela}){
     return(

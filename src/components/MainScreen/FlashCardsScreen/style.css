@@ -16,7 +16,7 @@
 
     font-size: 18px;
 
-    padding: 11px 12px 0 0;
+    padding: 16px 17px 0 0;
 }
 .flashcard h2 {
     display: flex;
@@ -25,6 +25,9 @@
 
     font-size: 28px;
     font-weight: bold;
+    text-align: center;
+
+    padding: 0 50px;
 }
 .flashcard .img {
     display: flex;
@@ -32,6 +35,8 @@
 
     padding: 0px 7px 7px 0;
     width: 100%;
+
+    margin-top: 10.75px;
 }
 
 .turned > div{
@@ -53,10 +58,11 @@
     padding: 0;
 }
 .turned p {
-    padding: 45px;
+    padding: 0 45px;
 
     font-size: 16px;
     line-height: 19px;
+    text-align: center;
 }
 .turned .buttons{
     display: flex;

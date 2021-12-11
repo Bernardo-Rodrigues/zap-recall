@@ -1,4 +1,5 @@
 import "../style.css"
+
 import sad from "../../../../assets/img/sad.png"
 
 export default function FailScreen(){

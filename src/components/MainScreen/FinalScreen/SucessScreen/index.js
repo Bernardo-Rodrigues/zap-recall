@@ -1,4 +1,5 @@
 import "../style.css"
+
 import party from "../../../../assets/img/party.png"
 
 export default function SucessScreen(){

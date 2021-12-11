@@ -1,5 +1,6 @@
-import logoMini from "../../assets/img/logo-mini.png"
 import "./style.css"
+
+import logoMini from "../../assets/img/logo-mini.png"
 
 export default function MainScreen( { children } ){
     return(
