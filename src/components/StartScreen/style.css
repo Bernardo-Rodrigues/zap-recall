@@ -7,6 +7,22 @@
 
     height: 100vh;
 }
+.start-screen input{
+    border: 1px solid #000000;
+    border-radius: 12px;
+    
+    width: 345px;
+    height: 49px;
+
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+.start-screen input::placeholder{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+}
 .start-screen button{
     display: flex;
     align-items: center;
@@ -19,6 +35,7 @@
     border: 3px solid #FFEF61;
     border-radius: 12px;
     background: 0;
+    margin-top: 25px;
 
     font-weight: bold;
     font-size: 20px;

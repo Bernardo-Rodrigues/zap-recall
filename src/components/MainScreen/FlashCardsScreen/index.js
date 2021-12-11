@@ -4,22 +4,29 @@ import "./style.css"
 import turn from "../../../assets/img/turn.png"
 import Deck from "../../../data/FlashcardsArray";
 
-export default function FlashCard( { setTela } ){
+export default function FlashCard( { zapGoals ,setTela } ){
     const [turnedCard,setTurnedCard] = useState("")
     const [flashcard, setFlashcard] = useState(0)
     const [answer, setAnswer] = useState("")
     const [correct, setCorrect] = useState(true)
+    const [zapAnswers, setZapAnswers] = useState(0)
     let lastCorrect = true;
+    let lastZapAnswers = zapAnswers
 
     function nextQuestion(){
         if(answer !== "" && answer !== "fourth-answer") {
             setCorrect(false);
             lastCorrect = false;
-        }
+        }else if(answer === "fourth-answer"){
+            setZapAnswers(zapAnswers + 1)
+            lastZapAnswers++;
+        } 
+
         setAnswer("")
         setTurnedCard("")
+
         if(flashcard + 1 === Deck.length) {
-            if(correct && lastCorrect){
+            if((correct && lastCorrect) || (lastZapAnswers >= zapGoals)){
                 setTela("sucess-screen")
             }else{
                 setTela("fail-screen")
