@@ -16,3 +16,21 @@
 
     margin-top: 15px;
 }
+.sucess-screen button,
+.fail-screen button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    width: 345px;
+    height: 72px;
+
+    border: 3px solid #FFEF61;
+    border-radius: 12px;
+    background: 0;
+    margin-top: 25px;
+
+    font-weight: bold;
+    font-size: 20px;
+}

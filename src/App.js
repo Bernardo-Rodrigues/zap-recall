@@ -20,7 +20,7 @@ export default function App(){
                             {tela === "flashcards-screen"
                                 ?   <Flashcard zapGoals={zapGoals} setTela={setTela}/>
                                 :   tela === "sucess-screen"
-                                        ?   <SucessScreen/>
+                                        ?   <SucessScreen setTela={setTela} setZapGoals={setZapGoals}/>
                                         :   <FailScreen/>
                             }
                         </MainScreen>
