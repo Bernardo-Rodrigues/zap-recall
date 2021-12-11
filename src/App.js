@@ -6,8 +6,6 @@ import Flashcard from "./components/MainScreen/FlashCardsScreen";
 import SucessScreen from "./components/MainScreen/FinalScreen/SucessScreen";
 import FailScreen from "./components/MainScreen/FinalScreen/FailScreen";
 
-
-
 export default function App(){
     const [tela,setTela] = useState("start-screen") 
     const [zapGoals, setZapGoals] = useState("")
@@ -21,7 +19,7 @@ export default function App(){
                                 ?   <Flashcard zapGoals={zapGoals} setTela={setTela}/>
                                 :   tela === "sucess-screen"
                                         ?   <SucessScreen setTela={setTela} setZapGoals={setZapGoals}/>
-                                        :   <FailScreen/>
+                                        :   <FailScreen setTela={setTela} setZapGoals={setZapGoals}/>
                             }
                         </MainScreen>
                 }
