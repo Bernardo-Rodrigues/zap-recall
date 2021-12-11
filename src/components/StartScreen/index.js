@@ -7,7 +7,7 @@ export default function FlashCards({setTela}){
         <>
             <img src={zapRecall} alt="Zap recall"/>
             <div className="zaps">
-                <button onClick={()=>setTela("flashcards-screen")}>Praticar React<img src={next} alt="next"/></button>
+                <button onClick={()=>setTela("flashcards-screen")} data-identifier="start-zap-recall">Praticar React<img src={next} alt="next"/></button>
             </div>
         </>
     );
