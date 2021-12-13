@@ -9,14 +9,16 @@ import FailScreen from "./components/MainScreen/FinalScreen/FailScreen";
 export default function App(){
     const [tela,setTela] = useState("start-screen") 
     const [zapGoals, setZapGoals] = useState("")
+    const [deck, setDeck] = useState("")
+    console.log(deck)
 
     return(
             <div className={tela}>
                 {tela === "start-screen" 
-                    ?   <StartScreen zapGoals={zapGoals} setZapGoals={setZapGoals} setTela={setTela}/>  
+                    ?   <StartScreen setDeck={setDeck} zapGoals={zapGoals} setZapGoals={setZapGoals} setTela={setTela}/>  
                     :   <MainScreen>
                             {tela === "flashcards-screen"
-                                ?   <Flashcard zapGoals={zapGoals} setTela={setTela}/>
+                                ?   <Flashcard deck={deck} zapGoals={zapGoals} setTela={setTela}/>
                                 :   tela === "sucess-screen"
                                         ?   <SucessScreen setTela={setTela} setZapGoals={setZapGoals}/>
                                         :   <FailScreen setTela={setTela} setZapGoals={setZapGoals}/>
